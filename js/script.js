@@ -80,6 +80,9 @@ function slide() {
         function () {
 
             $('.menu_mobile').css('display', 'flex').css('top', '150px').css('animation', 'move ease-in 300ms');
+            if( window.innerWidth <= 480 ) {
+              $('.menu_mobile').css('display', 'flex').css('top', '144px').css('animation', 'move ease-in 300ms');
+            }
             setTimeout(() => {
                 $('.menu_mobile_open').css('display', 'none');
                 $('.menu_mobile_close').css('display', 'flex');
