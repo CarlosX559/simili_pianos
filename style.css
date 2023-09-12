@@ -458,7 +458,23 @@ nav ul li a {
     z-index: -1;
     left: 500px;
     max-width: max-content;
-    width: 100%;
+    top: -600px;
+}
+
+.bg_traco_modelo_3 {
+    position: absolute;
+    z-index: -1;
+    left: 500px;
+    max-width: max-content;
+    top: 40px;
+}
+
+.bg_traco_modelo_4 {
+    position: absolute;
+    z-index: -1;
+    left: 500px;
+    max-width: max-content;
+    top: 720px;
 }
 
 .container_modelos_int {
@@ -511,6 +527,26 @@ nav ul li a {
     position: relative;
 }
 
+.modelo_3 {
+    background-image: url(img/modelo_3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    position: relative;
+}
+
+.modelo_4 {
+    background-image: url(img/modelo_4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    position: relative;
+}
+
 
 .bg_modelo {
     position: absolute;
@@ -546,6 +582,15 @@ nav ul li a {
     max-width: 500px;
     position: relative;
 }
+
+.area_text_modelo_int_3 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 680px;
+    position: relative;
+}
+
 
 .bg_linha_1 {
     position: absolute;
@@ -1058,11 +1103,13 @@ footer {
     }
 
     .modelo_1,
-    .modelo_2 {
+    .modelo_2,
+    .modelo_3,
+    .modelo_4 {
         height: 500px;
     }
 
-    .bg_traco_modelo_2 {
+    .bg_traco_modelo_2, .bg_traco_modelo_3 {
         left: auto;
     }
 
@@ -1288,8 +1335,14 @@ footer {
         font-size: 22px;
     }
 
+    .area_modelos {
+        gap: 60px;
+    }
+
     .modelo_1,
-    .modelo_2 {
+    .modelo_2,
+    .modelo_3,
+    .modelo_4 {
         height: 400px;
     }
 
