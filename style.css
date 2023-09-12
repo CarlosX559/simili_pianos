@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
     font-family: 'Poppins';
@@ -16,12 +16,22 @@ body {
     background: linear-gradient(174deg, #005159 2.34%, rgba(1, 6, 6, 0.72) 94.29%), #013E41;
 }
 
+.bg_header {
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.53) 44.42%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .container_menu {
     display: flex;
     justify-content: center;
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 99;
     transition: all ease 300ms;
 
@@ -84,7 +94,7 @@ nav ul li a {
 }
 
 .simili_logo_dourado {
-    max-width: max-content;
+    max-width: 150px;
     width: 100%;
 }
 
@@ -390,7 +400,8 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    gap: 5px;
 }
 
 .title_banner h2 {
@@ -401,6 +412,16 @@ nav ul li a {
     line-height: 115%;
     letter-spacing: 7.02px;
     text-transform: uppercase;
+    margin: 0px;
+}
+
+.sub_title_banner p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 115%;
     margin: 0px;
 }
 
@@ -536,7 +557,8 @@ nav ul li a {
 .title_modelo h2 {
     color: #FFF;
     font-size: 24px;
-    font-weight: 600;
+    font-family: 'Montserrat';
+    font-weight: 500;
     line-height: 110%;
     letter-spacing: 6.48px;
     text-transform: uppercase;
@@ -1015,6 +1037,10 @@ footer {
         font-size: 50px;
     }
 
+    .sub_title_banner p {
+        font-size: 32px;
+    }
+
 
     .container_modelos {
         padding: 40px 0px 40px 0px;
@@ -1171,9 +1197,18 @@ footer {
         }
 
         100% {
-            top: 144px;
+            top: 140px;
         }
 
+    }
+
+    .area_menu {
+        padding: 10px 20px;
+    }
+
+    .simili_logo_dourado {
+        max-width: 120px;
+        width: 100%;
     }
 
     #container_header {
@@ -1232,6 +1267,10 @@ footer {
         font-size: 32px;
     }
 
+    .sub_title_banner p {
+        font-size: 28px;
+    }
+
     .title_informacoes h2 {
         font-size: 20px;
     }
@@ -1272,7 +1311,6 @@ footer {
     }
 
     .area_infos_ambiente_int {
-        flex-direction: column;
         gap: 10px;
     }
 

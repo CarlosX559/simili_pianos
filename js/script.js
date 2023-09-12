@@ -81,7 +81,7 @@ function slide() {
 
             $('.menu_mobile').css('display', 'flex').css('top', '150px').css('animation', 'move ease-in 300ms');
             if( window.innerWidth <= 480 ) {
-              $('.menu_mobile').css('display', 'flex').css('top', '144px').css('animation', 'move ease-in 300ms');
+              $('.menu_mobile').css('display', 'flex').css('top', '140px').css('animation', 'move ease-in 300ms');
             }
             setTimeout(() => {
                 $('.menu_mobile_open').css('display', 'none');
@@ -116,10 +116,12 @@ function header() {
   let body = document.querySelector('body').getBoundingClientRect();
 
   if( body.top < -30 ) {
-      $('.container_menu').css( 'background-color', '#013E41').css( 'top', '0px' );
+      $('.container_menu').css( 'background', 'linear-gradient(174deg, #005159 2.34%, rgba(1, 6, 6, 0.72) 94.29%), #013E41').css( 'top', '0px' );
+      $('.bg_header').css( 'background', 'transparent' ).css( 'top', '0px' );
       $('.container_menu').css( 'top', '0px' );
   }else {
-      $('.container_menu').css( 'background-color', 'transparent' ).css( 'top', '0px' );
+      $('.container_menu').css( 'background', 'transparent' ).css( 'top', '0px' );
+      $('.bg_header').css( 'background', 'linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.53) 44.42%, rgba(0, 0, 0, 0.00) 100%)' ).css( 'top', '0px' );
   }
 
   if(body.width <= 480) {
