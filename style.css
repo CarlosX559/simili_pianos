@@ -123,7 +123,7 @@ nav ul li a {
     left: 0;
     object-fit: cover;
     width: 100%;
-  }
+}
 
 .container_header {
     display: flex;
@@ -563,7 +563,7 @@ nav ul li a {
     width: 100%;
     bottom: -40px;
     right: 0px;
-     max-width: max-content;
+    max-width: max-content;
     width: 100%;
 }
 
@@ -1039,6 +1039,7 @@ footer {
     #container_banner {
         height: 500px;
     }
+
     .title_banner h2 {
         font-size: 50px;
     }
@@ -1056,7 +1057,8 @@ footer {
         font-size: 22px;
     }
 
-    .modelo_1, .modelo_2 {
+    .modelo_1,
+    .modelo_2 {
         height: 500px;
     }
 
@@ -1068,6 +1070,7 @@ footer {
     #container_acustico {
         height: 400px;
     }
+
     .container_acustico_int {
         padding: 60px 0px 60px 0px;
     }
@@ -1211,9 +1214,11 @@ footer {
     .area_menu {
         padding: 10px 20px;
     }
+
     #container_header video {
         margin-top: 140px;
     }
+
     .simili_logo_dourado {
         max-width: 120px;
         width: 100%;
@@ -1266,7 +1271,7 @@ footer {
     #container_banner {
         height: 400px;
     }
-    
+
     .title_banner h2 {
         font-size: 32px;
     }
@@ -1283,7 +1288,8 @@ footer {
         font-size: 22px;
     }
 
-    .modelo_1, .modelo_2 {
+    .modelo_1,
+    .modelo_2 {
         height: 400px;
     }
 
