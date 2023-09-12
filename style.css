@@ -16,13 +16,12 @@ body {
     background: linear-gradient(174deg, #005159 2.34%, rgba(1, 6, 6, 0.72) 94.29%), #013E41;
 }
 
-
 .container_menu {
     display: flex;
     justify-content: center;
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 0;
     z-index: 99;
     transition: all ease 300ms;
 
@@ -361,15 +360,209 @@ nav ul li a {
     margin: 0px;
 }
 
+
+#container_banner {
+    background-image: url(img//banner_gbk1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+}
+
+.container_banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(113deg, rgba(1, 17, 18, 0.34) 26.32%, rgba(6, 26, 28, 0.00) 65.13%);
+}
+
+.container_banner_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.area_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title_banner h2 {
+    color: #CDA558;
+    font-family: 'Montserrat';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 7.02px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.container_modelos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+.bg_traco_modelo {
+    position: absolute;
+    top: 48px;
+    z-index: -1;
+    max-width: max-content;
+    width: 100%;
+}
+
+.bg_traco_modelo_2 {
+    position: absolute;
+    z-index: -1;
+    left: 500px;
+    max-width: max-content;
+    width: 100%;
+}
+
+.container_modelos_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 60px;
+    width: 100%;
+}
+
+.area_modelos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+}
+
+.title_informacoes h2 {
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 7.02px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.modelo_1 {
+    background-image: url(img/modelo_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    position: relative;
+}
+
+.modelo_2 {
+    background-image: url(img/modelo_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    position: relative;
+}
+
+
+.bg_modelo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    background: linear-gradient(257deg, rgba(0, 0, 0, 0.32) 28.29%, rgba(0, 0, 0, 0.00) 59.33%), linear-gradient(270deg, rgba(0, 0, 0, 0.40) 17.96%, rgba(0, 0, 0, 0.00) 60%), linear-gradient(272deg, rgba(23, 23, 23, 0.69) 20%, rgba(6, 4, 0, 0.5) 40%, rgba(201, 189, 165, 0.00) 60%);
+    z-index: 0;
+}
+
+.area_text_modelo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+
+}
+
+.area_text_modelo_int {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+}
+
+
+.area_text_modelo_int_2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.bg_linha_1 {
+    position: absolute;
+    max-width: max-content;
+    width: 100%;
+    bottom: -20px;
+    left: -40px;
+    max-width: max-content;
+    width: 100%;
+}
+
+.bg_linha_2 {
+    position: absolute;
+    max-width: max-content;
+    width: 100%;
+    bottom: -40px;
+    right: 0px;
+     max-width: max-content;
+    width: 100%;
+}
+
+.title_modelo h2 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: 6.48px;
+    text-transform: uppercase;
+    margin: 0px;
+    text-align: end;
+}
+
+
 /*Acustico*/
+
+#container_acustico {
+    background-image: url(img/banner_acustico.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
 
 .container_acustico {
     display: flex;
     justify-content: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(113deg, rgba(1, 17, 18, 0.34) 26.32%, rgba(6, 26, 28, 0.00) 65.13%);
+    /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(113deg, rgba(1, 17, 18, 0.34) 26.32%, rgba(6, 26, 28, 0.00) 65.13%);*/
     box-shadow: 0px 18px 50px 24px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
-
+    height: 100%;
     position: relative;
 }
 
@@ -395,7 +588,7 @@ nav ul li a {
     align-items: center;
     width: 100%;
     max-width: 1280px;
-    padding: 60px 0px 120px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 
@@ -814,8 +1007,35 @@ footer {
         height: 55%;
     }
 
-    /*Container acustico*/
 
+    #container_banner {
+        height: 500px;
+    }
+    .title_banner h2 {
+        font-size: 50px;
+    }
+
+
+    .container_modelos {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .title_informacoes h2 {
+        font-size: 22px;
+    }
+
+    .modelo_1, .modelo_2 {
+        height: 500px;
+    }
+
+    .bg_traco_modelo_2 {
+        left: auto;
+    }
+
+    /*Container acustico*/
+    #container_acustico {
+        height: 400px;
+    }
     .container_acustico_int {
         padding: 60px 0px 60px 0px;
     }
@@ -1004,6 +1224,25 @@ footer {
         width: 100%;
     }
 
+    #container_banner {
+        height: 400px;
+    }
+    
+    .title_banner h2 {
+        font-size: 32px;
+    }
+
+    .title_informacoes h2 {
+        font-size: 20px;
+    }
+
+    .title_modelo h2 {
+        font-size: 22px;
+    }
+
+    .modelo_1, .modelo_2 {
+        height: 400px;
+    }
 
     /*Container acustico*/
     .icon_left {
