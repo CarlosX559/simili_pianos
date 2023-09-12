@@ -126,8 +126,47 @@ function header() {
 
   if(body.width <= 480) {
       $('.container_menu').css( 'top', '0px' );
+      
   }
 
 }
 
 window.addEventListener( 'scroll', header );
+
+const animations = document.querySelectorAll("[data-animation]");
+const animations2 = document.querySelectorAll("[data-animation-2]");
+const animationClass = "animate";
+const animationClass2 = "animate2";
+
+function animation_scroll() {
+  const area_window = window.innerHeight * 0.20 * 4.6;
+
+  animations.forEach((element) => {
+    let posicaoAtual = element.getBoundingClientRect().top;
+
+    if (area_window > posicaoAtual) {
+      element.classList.add(animationClass);
+      element.classList.add(animationClass2);
+    } else {
+      element.classList.remove(animationClass);
+      element.classList.remove(animationClass2);
+    }
+  });
+  animations2.forEach((element) => {
+    let posicaoAtual = element.getBoundingClientRect().top;
+
+    if (area_window > posicaoAtual) {
+      element.classList.add(animationClass2);
+    } else {
+      element.classList.remove(animationClass2);
+    }
+  });
+}
+
+if (animations.length) {
+  window.addEventListener("scroll", animation_scroll);
+}
+
+if (animations2.length) {
+  window.addEventListener("scroll", animation_scroll);
+}

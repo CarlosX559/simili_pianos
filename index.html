@@ -126,7 +126,8 @@
 
                     <div class="area_infos_ambiente">
                         <div class="area_infos_ambiente_int">
-                            <div class="info_ambiente">
+                        
+                            <div class="info_ambiente" data-animation="slice" data-delay-1>
                                 <h1>
                                     Ambientação
                                 </h1>
@@ -134,7 +135,7 @@
 
                             <img src="img/point.svg" alt="">
 
-                            <div class="info_ambiente">
+                            <div class="info_ambiente" data-animation="slice" data-delay-2>
                                 <h1>
                                     Glamour
                                 </h1>
@@ -142,7 +143,7 @@
 
                             <img src="img/point.svg" alt="">
 
-                            <div class="info_ambiente">
+                            <div class="info_ambiente" data-animation="slice" data-delay-3>
                                 <h1>
                                     Refinamento
                                 </h1>
@@ -150,11 +151,15 @@
 
                             <img src="img/point.svg" alt="">
 
-                            <div class="info_ambiente">
+                            <div class="info_ambiente" data-animation="slice" data-delay-3>
                                 <h1>
                                     Prestígio
                                 </h1>
                             </div>
+
+                            <div class="line_animation" data-animation-2="size_line" data-delay-2></div>
+                            <div class="line_animation_2" data-animation-2="size_line_2" data-delay-3></div>
+
 
                         </div>
                     </div>
@@ -397,14 +402,14 @@
                     <!--<img class="piano_vetor" src="img/piano_vetor.svg" alt="">-->
 
                     <div class="area_text_acustico">
-                        <div class="title_acustico">
+                        <div class="title_acustico" data-animation="down" data-delay-1>
                             <h2>
                                 <b>No coração da arquitetura de luxo</b>, emerge um símbolo atemporal de elegância: <b>O
                                     piano acústico.</b>
                             </h2>
                         </div>
 
-                        <div class="sub_title_acustico">
+                        <div class="sub_title_acustico" data-animation="down" data-delay-2>
                             <p>
                                 Mais do que um instrumento, ele transcende as notas, transformando-se em uma obra-prima
                                 que
@@ -424,13 +429,17 @@
     </section>
 
 
+    <section id="container_banner_2">
+        <img src="img/banner_2.png" alt="">
+    </section>
+
 
     <div class="container_swiper">
         <div class="container_swiper_int">
             <div class="area_swiper">
 
                 <div class="area_texts_ambiente">
-                    <div class="title_ambiente">
+                    <div class="title_ambiente" data-animation="down">
                         <h2>
                             Conheça nossos modelos
                         </h2>
@@ -503,12 +512,12 @@
 
 
                 <div class="area_texts_swiper">
-                    <div class="title_swiper">
+                    <div class="title_swiper" data-animation="down" data-delay-1>
                         <h2>
                             PIANO DE CAUDA
                         </h2>
                     </div>
-                    <div class="sub_title_swiper">
+                    <div class="sub_title_swiper" data-animation="down"  data-delay-2>
                         <p>
                             A presença imponente do piano de cauda em um ambiente luxuoso é um testemunho do requinte
                             absoluto. Suas teclas elegantemente trabalhadas e sua forma majestosa preenchem o espaço com
@@ -529,12 +538,12 @@
         <div class="container_banner">
             <div class="container_banner_int">
                 <div class="area_banner">
-                    <div class="title_banner">
+                    <div class="title_banner" data-animation="left" data-delay-1>
                         <h2>
                             GB1K
                         </h2>
                     </div>
-                    <div class="sub_title_banner">
+                    <div class="sub_title_banner" data-animation="right" data-delay-1>
                         <p>
                             Piano de Cauda
                         </p>
@@ -565,14 +574,14 @@
 
                     <div class="area_text_modelo">
                         <div class="area_text_modelo_int">
-                            <div class="title_modelo">
+                            <div class="title_modelo" data-animation="down" data-delay-1>
                                 <h2>
                                     nossos modelos
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2>
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2>
                         </div>
 
                     </div>
@@ -589,14 +598,14 @@
 
                     <div class="area_text_modelo">
                         <div class="area_text_modelo_int_2">
-                            <div class="title_modelo">
+                            <div class="title_modelo" data-animation="down" data-delay-1>
                                 <h2>
                                     MOSTRAS DE ARQUITETURA
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2>
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2>
                         </div>
 
                     </div>
@@ -608,19 +617,20 @@
                         d="M0.651726 146C-13.1442 146 17.8457 146 0.651726 146ZM0.651726 146L0.651726 73L0.651726 2.02656e-06"
                         stroke="#CDA558" />
                 </svg>
+
                 <div class="modelo_3">
                     <div class="bg_modelo"></div>
 
                     <div class="area_text_modelo">
                         <div class="area_text_modelo_int_2">
-                            <div class="title_modelo">
+                            <div class="title_modelo" data-animation="down" data-delay-1>
                                 <h2>
                                     Inovando em Ambientes
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2>
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2>
                         </div>
 
                     </div>
@@ -633,19 +643,20 @@
                         d="M0.651726 146C-13.1442 146 17.8457 146 0.651726 146ZM0.651726 146L0.651726 73L0.651726 2.02656e-06"
                         stroke="#CDA558" />
                 </svg>
+                
                 <div class="modelo_4">
                     <div class="bg_modelo"></div>
 
-                    <div class="area_text_modelo">
+                   <div class="area_text_modelo">
                         <div class="area_text_modelo_int_3">
-                            <div class="title_modelo">
+                            <div class="title_modelo" data-animation="down" data-delay-1>
                                 <h2>
-                                    Sofisticação para seu ambiente
+                                    Sofisticação e exclusividade
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2>
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2>
                         </div>
 
                     </div>
@@ -655,6 +666,12 @@
             </div>
         </div>
     </div>
+
+    <section id="container_banner_3">
+        <img src="img/banner_1.png" alt="">
+    </section>
+
+
 
     <footer>
 
