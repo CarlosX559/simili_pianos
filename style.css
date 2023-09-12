@@ -386,7 +386,6 @@ nav ul li a {
     gap: 40px;
     position: absolute;
     left: 20px;
-    height: 50%;
     z-index: 1;
 
 }
@@ -490,7 +489,6 @@ nav ul li a {
     background-size: cover;
     height: 900px;
     width: 100%;
-    background-attachment: fixed;
 }
 
 .container_banner {
@@ -1207,7 +1205,6 @@ footer {
 
     .area_options_slide {
         justify-content: flex-start;
-        height: 55%;
     }
 
     .line_animation {
@@ -1372,7 +1369,6 @@ footer {
 
     .area_options_slide {
         justify-content: center;
-        height: 70%;
     }
 
     .area_text_gb1k {
