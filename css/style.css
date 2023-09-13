@@ -213,15 +213,21 @@ nav ul li a:hover {
 .area_btn_whats img {
     max-width: 60px;
     width: 100%;
-    transition: all ease 200ms;
+    transition: all ease-in-out 300ms;
     height: auto;
     transform: scale3d(1, 1, 1);
+    animation: btn_whats 1s infinite alternate;
 }
 
-.area_btn_whats img:hover {
-    transform: scale3d(1.1, 1.1, 1.1);
-}
+@keyframes btn_whats {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
 
+    100% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
 
 /*Header*/
 
