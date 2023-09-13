@@ -64,23 +64,23 @@ a {
 }
 
 .line_animation {
-    position: absolute;
+    position: absolute !important;
     width: 2px !important;
     height: 410px !important;
     background-color: #FFFFFF;
     bottom: -440px;
-    z-index: 1;
+    z-index: 1 !important;
 }
 
 .line_animation_2 {
-    position: absolute;
+    position: absolute !important;
     width: 100% !important;
     max-width: 500px !important;
     height: 2px !important;
     background-color: #FFFFFF;
     bottom: -440px;
     left: -80px;
-    z-index: 1;
+    z-index: 1 !important;
 }
 
 [data-animation="down"] {
@@ -591,7 +591,7 @@ nav ul li a:hover {
 
 .bg_traco_modelo {
     position: absolute;
-    top: 48px;
+    top: 95px;
     z-index: -1;
     max-width: max-content;
     width: 100%;
@@ -636,7 +636,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
     width: 100%;
 }
 
@@ -649,6 +649,13 @@ nav ul li a:hover {
     letter-spacing: 7.02px;
     text-transform: uppercase;
     margin: 0px;
+}
+
+.area_title_infomacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .modelo_1 {
@@ -714,6 +721,9 @@ nav ul li a:hover {
 .area_text_modelo_int {
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
     width: 100%;
     max-width: 420px;
     position: relative;
@@ -966,10 +976,10 @@ nav ul li a:hover {
 .swiper-button-prev {
     color: #CEA571 !important;
     border-radius: 100px;
-    background: linear-gradient(168deg, #05555C 9.14%, #004248 91.1%);
+    /*background: linear-gradient(168deg, #05555C 9.14%, #004248 91.1%);
     box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.25);
     width: 65px !important;
-    height: 65px !important;
+    height: 65px !important;*/
 }
 
 .swiper .swiper-pagination {
