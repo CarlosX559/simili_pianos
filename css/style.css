@@ -1658,12 +1658,16 @@ footer {
         font-size: 18px;
     }
 
+    .line_animation, .line_animation_2 {
+        display: none;
+    }
+
     /*Container slide*/
     .area_options_slide {
         justify-content: center;
         height: max-content;
         top: 40px;
-        left: 80px;
+        left: calc(38% - 80px);
         flex-direction: row;
     }
 
