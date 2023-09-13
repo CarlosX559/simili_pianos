@@ -10,10 +10,18 @@
     --cor-auxiliar: #F9F4F1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     background: linear-gradient(174deg, #005159 2.34%, rgba(1, 6, 6, 0.72) 94.29%), #013E41;
+}
+
+a {
+    text-decoration: none;
 }
 
 [data-animation] {
@@ -177,16 +185,43 @@ nav ul li a {
     color: var(--cor-auxiliar);
     font-size: 18px;
     font-weight: 600;
-    line-height: normal;
+    line-height: 100%;
     letter-spacing: 4.86px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all ease 200ms;
+}
+
+
+nav ul li a:hover {
+    color: var(--cor-secundaria);
 }
 
 .simili_logo_dourado {
-    max-width: 150px;
+    max-width: 120px;
+    height: auto;
     width: 100%;
 }
+
+.area_btn_whats {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.area_btn_whats img {
+    max-width: 60px;
+    width: 100%;
+    transition: all ease 200ms;
+    height: auto;
+    transform: scale3d(1, 1, 1);
+}
+
+.area_btn_whats img:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
 
 /*Header*/
 
@@ -829,7 +864,7 @@ nav ul li a {
     color: var(--cor-secundaria);
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 125%;
     margin: 0px;
 }
 
@@ -841,10 +876,39 @@ nav ul li a {
     color: var(--cor-secundaria);
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 120%;
     margin: 0px;
 }
 
+.btn_contato_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(99deg, #B2803F -6.23%, rgba(178, 128, 63, 0.00) 101.47%);
+    box-shadow: 0px 5px 10px 0px rgba(111, 62, 0, 0.6);
+    width: 100%;
+    max-width: max-content;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.btn_contato_1 h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0px;
+}
+
+.btn_contato_1:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    box-shadow: 0px 5px 8px 2px rgba(111, 62, 0, 0.8);
+}
+
+/*Container swiper*/
 .container_swiper {
     display: flex;
     justify-content: center;
@@ -994,7 +1058,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 670px;
+    height: 500px;
 
 }
 
@@ -1009,7 +1073,7 @@ footer {
 
 .area_footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -1017,6 +1081,8 @@ footer {
 
 .area_texts_footer {
     display: flex;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
     gap: 20px;
     max-width: 420px;
@@ -1044,6 +1110,7 @@ footer {
 
 .area_redes {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -1054,10 +1121,103 @@ footer {
     justify-content: center;
 }
 
+.area_redes a img {
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.area_redes a img:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.btn_contato_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #043F45;
+    box-shadow: 0px 22px 21px 0px rgba(0, 0, 0, 0.65) inset;
+    width: 100%;
+    max-width: max-content;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.btn_contato_2 h2 {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0px;
+}
+
+.btn_contato_2:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
 
 
+.container_copy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(99deg, #B2803F -6.23%, rgba(178, 128, 63, 0.00) 101.47%);
+    box-shadow: 0px 13px 18px 0px rgba(111, 62, 0, 0.74) inset;
+    padding: 25px 0px;
+}
 
+.container_copy_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+.area_copy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.direitos h2 {
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.area_contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cnpj h2 {
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.contatos_footer h2 {
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0px;
+}
 
 
 @media(min-width: 1920px) {
@@ -1084,8 +1244,12 @@ footer {
         border-radius: 10px;
     }
 
+    .menu_mobile nav ul li a {
+        transition: all ease 200ms;
+    }
+
     .menu_mobile nav ul li a:hover {
-        color: #fff;
+        color: var(--cor-secundaria);
     }
 
     @keyframes move {
@@ -1161,7 +1325,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 10px;
+        gap: 15px;
     }
 
     .menu_mobile nav ul li a {
@@ -1331,6 +1495,14 @@ footer {
         font-size: 18px;
     }
 
+    .cnpj h2 {
+        font-size: 16px;
+    }
+
+    .contatos_footer h2 {
+        font-size: 16px;
+    }
+
     #container_banner_3 {
         padding-bottom: 40px;
     }
@@ -1466,6 +1638,10 @@ footer {
         left: auto;
     }
 
+    .btn_contato_1 h2 {
+        font-size: 18px;
+    }
+
     /*Container slide*/
     .area_options_slide {
         justify-content: center;
@@ -1566,8 +1742,20 @@ footer {
         height: 380px;
     }
 
+    .area_copy {
+        padding: 0px 20px;
+    }
+
+    .area_contatos {
+        flex-direction: column;
+    }
+
     .title_footer h2 {
         font-size: 26px;
+    }
+
+    .btn_contato_2 h2 {
+        font-size: 18px;
     }
 
 }
