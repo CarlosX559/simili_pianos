@@ -675,7 +675,7 @@ select option {
     top: 0;
     left: 0;
     object-fit: cover;
-    max-height: 745px;
+    max-height: 625px;
     width: 100%;
 }
 
