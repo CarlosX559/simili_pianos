@@ -186,3 +186,36 @@ if (animations.length) {
 if (animations2.length) {
   window.addEventListener("scroll", animation_scroll);
 }
+
+function modal() {
+
+  let btn_form = document.querySelectorAll('.btn_form');
+
+  btn_form.forEach((element) => {
+
+      element.addEventListener('click', () => {
+          document.querySelector('.container_modal').style.opacity = 0;
+          document.querySelector('.container_modal').style.display = 'flex';
+          setTimeout(() => {
+              document.querySelector('.container_modal').style.opacity = 1;
+
+          }, 200);
+
+      });
+
+  });
+
+  let close_modal = document.querySelector('.close_modal');
+
+  close_modal.addEventListener('click', () => {
+      document.querySelector('.container_modal').style.opacity = 0;
+
+      setTimeout(() => {
+          document.querySelector('.container_modal').style.display = 'none';
+      }, 200);
+
+  })
+
+}
+
+modal();

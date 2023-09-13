@@ -90,9 +90,7 @@
     </header>
 
     <div class="area_btn_whats">
-        <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!" target="_blank">
-            <img src="img/btn_whatsapp.png" alt="whatsapp" width="74" height="75">
-        </a>
+        <img class="btn_form" src="img/btn_whatsapp.png" alt="whatsapp" width="74" height="75">
     </div>
 
 
@@ -128,6 +126,55 @@
 
     </section>
 
+
+    <div class="container_modal">
+        <div class="container_modal_int">
+
+            <div class="close_modal">
+                X
+            </div>
+
+            <div class="area_modal">
+                <form action="enviar.php" method="POST">
+
+                    <div class="area_input">
+                        <label for="nome">
+                            Nome completo
+                        </label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="area_input">
+                        <label for="telefone">
+                            Telefone
+                        </label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+
+                    <div class="area_input">
+                        <label for="endereco">
+                            Endereço
+                        </label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+
+                    <div class="area_input">
+                        <label for="produto">
+                            Produto
+                        </label>
+                        <select id="produto" name="produto" required>
+                            <option value="GB1K">GB1K</option>
+                            <option value="JU109">JU109</option>
+                            <option value="JX113T">JX113T</option>
+                        </select>
+                    </div>
+
+                    <input class="enviar" type="submit" value="Enviar">
+
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div class="container_ambiente">
         <div class="container_ambiente_int">
@@ -398,9 +445,10 @@
                     </div>
 
                     <div class="area_options_slide">
-                        <img class="btns_slide selected" id="slide_swiper_1" src="img/gb1k.svg" alt="" loading="lazy">
-                        <img class="btns_slide" id="slide_swiper_2" src="img/jx113.svg" alt="" loading="lazy">
-                        <img class="btns_slide" id="slide_swiper_3" src="img/ju109.svg" alt="" loading="lazy">
+                        <img class="btns_slide selected" id="slide_swiper_1" src="img/gb1k.svg" alt="gb1k" loading="lazy">
+                        <img class="btns_slide" id="slide_swiper_2" src="img/jx113.svg" alt="jx113" loading="lazy">
+                        <img class="btns_slide" id="slide_swiper_3" src="img/ju109.svg" alt="ju109" loading="lazy">
+                        <!--<img class="btns_slide" id="slide_swiper_3" src="img/dg1bk.svg" alt="dg1bk" loading="lazy">-->
                     </div>
                 </div>
 
@@ -433,14 +481,14 @@
                                 cativam os olhos, mas também elevam a alma do espaço.
                             </p>
                         </div>
-                        <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!" target="_blank">
-                            <div class="btn_contato_1">
-                                <h2>
-                                    Alcance o luxo
-                                </h2>
-                            </div>
-                        </a>
-                      
+
+                        <div class="btn_contato_1 btn_form">
+                            <h2>
+                                Alcance o luxo
+                            </h2>
+                        </div>
+
+
 
                     </div>
 
@@ -592,15 +640,15 @@
                         mais Informações
                     </h2>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!" target="_blank">
-                    <div class="btn_contato_1">
-                        <h2>
-                            Seja único
-                        </h2>
-                    </div>
-                </a>
+
+                <div class="btn_form btn_contato_1">
+                    <h2>
+                        Seja único
+                    </h2>
+                </div>
+
             </div>
-           
+
             <div class="area_modelos">
 
                 <div class="modelo_1">
@@ -616,12 +664,14 @@
                             <a href="#modelos">
                                 <div class="btn_contato_1">
                                     <h2>
-                                       Saiba mais
+                                        Saiba mais
                                     </h2>
                                 </div>
                             </a>
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2 loading="lazy">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2 loading="lazy">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2
+                                loading="lazy">
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2
+                                loading="lazy">
                         </div>
 
                     </div>
@@ -644,8 +694,10 @@
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2 loading="lazy">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2 loading="lazy">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2
+                                loading="lazy">
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2
+                                loading="lazy">
                         </div>
 
                     </div>
@@ -669,8 +721,10 @@
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2 loading="lazy">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2 loading="lazy">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2
+                                loading="lazy">
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2
+                                loading="lazy">
                         </div>
 
                     </div>
@@ -695,8 +749,10 @@
                                 </h2>
                             </div>
 
-                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2 loading="lazy">
-                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2 loading="lazy">
+                            <img class="bg_linha_1" src="img/bg_linha_1.svg" alt="" data-animation="left" data-delay-2
+                                loading="lazy">
+                            <img class="bg_linha_2" src="img/bg_linha_2.svg" alt="" data-animation="right" data-delay-2
+                                loading="lazy">
                         </div>
 
                     </div>
@@ -731,13 +787,13 @@
                             </p>
                         </div>
 
-                        <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!" target="_blank">
-                            <div class="btn_contato_2">
-                                <h2>
-                                    Saiba como ser único
-                                </h2>
-                            </div>
-                        </a>
+
+                        <div class="btn_form btn_contato_2">
+                            <h2>
+                                Saiba como ser único
+                            </h2>
+                        </div>
+
 
                         <div class="area_redes">
                             <a href="index.html">
@@ -746,7 +802,8 @@
                             <a href="https://www.instagram.com/simili.ensino/" target="_blank">
                                 <img src="img/instagram.svg" alt="" width="35" height="35">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!"
+                                target="_blank">
                                 <img src="img/whatsapp.svg" alt="" width="35" height="35">
                             </a>
 
@@ -769,12 +826,12 @@
                     <div class="area_contatos">
                         <div class="cnpj">
                             <h2>
-                                cnpj: 23.550.058/0001-04 
+                                cnpj: 23.550.058/0001-04
                             </h2>
                         </div>
                         <div class="contatos_footer">
                             <h2>
-                                av.brasil, 146, sala 03 
+                                av.brasil, 146, sala 03
                             </h2>
                         </div>
                         <div class="contatos_footer">
