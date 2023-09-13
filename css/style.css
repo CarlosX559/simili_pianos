@@ -425,7 +425,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-end;
     gap: 40px;
-    position: absolute;
+    position: absolute !important;
     left: 20px;
     z-index: 1;
 
