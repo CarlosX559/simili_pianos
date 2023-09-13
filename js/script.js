@@ -41,8 +41,9 @@ function slide() {
           setTimeout(() => {
             slide_principal.css('display', 'flex');
           }, 500);
-
+         
         }
+        $('.lines').css( 'display', 'flex' );
         break;
       case 'slide_swiper_2':
 
@@ -52,7 +53,7 @@ function slide() {
             slide_principal.css('display', 'flex');
           }, 500);
         }
-
+        $('.lines').css( 'display', 'flex' );
         break;
 
       case 'slide_swiper_3':
@@ -63,6 +64,7 @@ function slide() {
             slide_principal.css('display', 'flex');
           }, 500);
         }
+        $('.lines').css( 'display', 'flex' );
         break;
 
         case 'slide_video':
@@ -73,7 +75,7 @@ function slide() {
             slide_principal.css('display', 'flex');
           }, 500);
         }
-
+        $('.lines').css( 'display', 'none' );
         break;
 
 

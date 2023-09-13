@@ -675,7 +675,7 @@ select option {
     top: 0;
     left: 0;
     object-fit: cover;
-    height: 745px;
+    max-height: 745px;
     width: 100%;
 }
 
@@ -1326,12 +1326,12 @@ footer {
 .area_redes img {
     transition: all ease 200ms;
     transform: scale3d(1, 1, 1);
+    cursor: pointer;
 }
 
 .area_redes img:hover {
     transform: scale3d(1.1, 1.1, 1.1);
 }
-
 
 .area_redes a img {
     transition: all ease 200ms;
@@ -1580,7 +1580,8 @@ footer {
     }
 
     .area_options_slide {
-        justify-content: flex-start;
+        justify-content: flex-end;
+        height: 60%;
     }
 
     .line_animation {
@@ -1752,7 +1753,8 @@ footer {
     }
 
     .area_options_slide {
-        justify-content: center;
+        height: 80%;
+        justify-content: flex-end;
     }
 
     .area_text_gb1k {
@@ -1874,16 +1876,20 @@ footer {
 
     .line_animation,
     .line_animation_2 {
-        display: none;
+        display: none !important;
     }
 
     /*Container slide*/
+    .area_video_slide video {
+        height: 400px;
+    }
+
     .area_options_slide {
         justify-content: center;
         height: max-content;
-        top: 40px;
-        left: calc(38% - 80px);
+        left: calc(38% - 100px);
         flex-direction: row;
+        margin-top: -40px;
     }
 
     .area_gb1k_1,
