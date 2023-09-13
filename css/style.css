@@ -551,7 +551,7 @@ select option {
 }
 
 .btns_slide.selected {
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.15, 1.15, 1.15);
 }
 
 .area_options_slide {
@@ -563,6 +563,7 @@ select option {
     position: absolute !important;
     left: 20px;
     z-index: 1;
+    height: 58%;
 
 }
 
@@ -574,7 +575,7 @@ select option {
 }
 
 .area_options_slide img:hover {
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.15, 1.15, 1.15);
 }
 
 
@@ -659,7 +660,26 @@ select option {
     margin: 0px;
 }
 
+.area_video_slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
+.area_video_slide video {
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 745px;
+    width: 100%;
+}
+
+/*Container banner*/
 #container_banner {
     background-image: url(../img/banner_gbk1.webp);
     background-position: center;
@@ -723,7 +743,7 @@ select option {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 40px 0px;
 }
 
 .bg_traco_modelo {
@@ -773,7 +793,7 @@ select option {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
     width: 100%;
 }
 
@@ -920,6 +940,7 @@ select option {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 40px;
 }
 
 #container_banner_2 img {
@@ -965,7 +986,7 @@ select option {
 .icon_left {
     position: absolute;
     left: 0px;
-    max-width: max-content;
+    max-width: 410px;
     width: 100%;
     z-index: -1;
 }
@@ -973,7 +994,7 @@ select option {
 .icon_right {
     position: absolute;
     right: 0px;
-    max-width: max-content;
+    max-width: 410px;
     width: 100%;
     z-index: -1;
 }
@@ -1033,6 +1054,33 @@ select option {
     margin: 0px;
 }
 
+.btn_contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #043F45;
+    box-shadow: 0px 22px 21px 0px rgba(0, 0, 0, 0.65) inset;
+    width: 100%;
+    max-width: max-content;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+    cursor: pointer;
+}
+
+.btn_contato h2 {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0px;
+}
+
+.btn_contato:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
 .btn_contato_1 {
     display: flex;
     justify-content: center;
@@ -1112,7 +1160,7 @@ select option {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #CEA571 !important;
+    color: #005159 !important;
     border-radius: 100px;
     /*background: linear-gradient(168deg, #05555C 9.14%, #004248 91.1%);
     box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.25);
@@ -1275,6 +1323,16 @@ footer {
     justify-content: center;
 }
 
+.area_redes img {
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.area_redes img:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+
 .area_redes a img {
     transition: all ease 200ms;
     transform: scale3d(1, 1, 1);
@@ -1311,7 +1369,6 @@ footer {
 .btn_contato_2:hover {
     transform: scale3d(1.1, 1.1, 1.1);
 }
-
 
 .container_copy {
     display: flex;

@@ -65,6 +65,17 @@ function slide() {
         }
         break;
 
+        case 'slide_video':
+
+        if (slide_principal[3].attributes[1].value == 'true') {
+          slide_principal[3].attributes[1].value = 'false';
+          setTimeout(() => {
+            slide_principal.css('display', 'flex');
+          }, 500);
+        }
+
+        break;
+
 
     }
   });

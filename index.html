@@ -7,7 +7,7 @@
     <title>Simili pianos</title>
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -444,17 +444,27 @@
                         <div class="swiper-pagination"></div>
                     </div>
 
-                    <div class="area_options_slide">
-                        <img class="btns_slide selected" id="slide_swiper_1" src="img/gb1k.svg" alt="gb1k" loading="lazy">
-                        <img class="btns_slide" id="slide_swiper_2" src="img/jx113.svg" alt="jx113" loading="lazy">
-                        <img class="btns_slide" id="slide_swiper_3" src="img/ju109.svg" alt="ju109" loading="lazy">
-                        <!--<img class="btns_slide" id="slide_swiper_3" src="img/dg1bk.svg" alt="dg1bk" loading="lazy">-->
+                    <div class="area_video_slide slide_principal" aria-hidden="true">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="video/video_op_head.mp4" type="video/mp4">
+                        </video>
+
                     </div>
+
+
                 </div>
 
-
+                <div class="area_options_slide">
+                    <img class="btns_slide selected" id="slide_swiper_1" src="img/gb1k.svg" alt="gb1k" loading="lazy">
+                    <img class="btns_slide" id="slide_swiper_2" src="img/jx113.svg" alt="jx113" loading="lazy">
+                    <img class="btns_slide" id="slide_swiper_3" src="img/ju109.svg" alt="ju109" loading="lazy">
+                    <img class="btns_slide" id="slide_video" src="img/dg1bk.svg" alt="dg1bk" loading="lazy">
+                </div>
             </div>
+
+
         </div>
+    </div>
     </div>
 
     <section id="container_acustico">
@@ -482,7 +492,7 @@
                             </p>
                         </div>
 
-                        <div class="btn_contato_1 btn_form">
+                        <div class="btn_contato btn_form">
                             <h2>
                                 Alcance o luxo
                             </h2>
@@ -802,10 +812,10 @@
                             <a href="https://www.instagram.com/simili.ensino/" target="_blank">
                                 <img src="img/instagram.svg" alt="" width="35" height="35">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!"
-                                target="_blank">
-                                <img src="img/whatsapp.svg" alt="" width="35" height="35">
-                            </a>
+
+
+                            <img class="btn_form" src="img/whatsapp.svg" alt="" width="35" height="35">
+
 
                         </div>
                     </div>
