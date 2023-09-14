@@ -587,7 +587,7 @@ select option {
 
 .area_gb1k_1 {
     position: relative;
-    background-image: url(../img/bg_gb1k_1.webp);
+    background-image: url(../img/gb1k_1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -598,7 +598,7 @@ select option {
 
 .area_gb1k_2 {
     position: relative;
-    background-image: url(../img/bg_gb1k_2.webp);
+    background-image: url(../img/gb1k_2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -609,7 +609,7 @@ select option {
 
 .area_gb1k_3 {
     position: relative;
-    background-image: url(../img/bg_gb1k_3.webp);
+    background-image: url(../img/gb1k_3.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -660,7 +660,25 @@ select option {
     width: 100%;
 }
 
+.area_jx113_2 {
+    position: relative;
+    background-image: url(../img/JX113_2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 745px;
+    width: 100%;
+}
 
+.area_jx113_3 {
+    position: relative;
+    background-image: url(../img/JX113_3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 745px;
+    width: 100%;
+}
 
 .bg_slide {
     position: absolute;
@@ -688,7 +706,7 @@ select option {
     gap: 20px;
     height: 96%;
     width: 100%;
-    max-width: 600px;
+    max-width: 660px;
     position: relative;
     padding-left: 140px;
 }
@@ -701,6 +719,10 @@ select option {
     letter-spacing: 5.4px;
     text-transform: uppercase;
     margin: 0px;
+}
+
+.title_gb1k h2 b {
+    color: #FFFFFF;
 }
 
 .sub_title_gb1k p {
@@ -987,10 +1009,41 @@ select option {
     text-align: end;
     transition: all ease 200ms;
 }
-.title_modelo h2:hover  { 
+
+.title_modelo h2:hover {
     color: var(--cor-secundaria);
 }
 
+.btn_contato_modelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(99deg, #B2803F -6.23%, rgba(178, 128, 63, 0.00) 101.47%);
+    box-shadow: 0px 5px 10px 0px rgba(111, 62, 0, 0.6);
+    width: 100%;
+    max-width: max-content;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all ease 200ms;
+    transform: scale3d(1, 1, 1);
+    cursor: pointer;
+}
+
+.btn_contato_modelo h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 6.48px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.btn_contato_modelo:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    box-shadow: 0px 5px 8px 2px rgba(111, 62, 0, 0.8);
+}
 
 #container_banner_2 {
     display: flex;
@@ -1091,7 +1144,7 @@ select option {
 }
 
 .title_acustico h2 {
-    color: var(--cor-secundaria);
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
     line-height: 125%;
@@ -1103,7 +1156,7 @@ select option {
 }
 
 .sub_title_acustico p {
-    color: var(--cor-secundaria);
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
@@ -1126,7 +1179,7 @@ select option {
 }
 
 .btn_contato h2 {
-    color: var(--cor-secundaria);
+    color: #FFFFFF;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -1235,11 +1288,10 @@ select option {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: linear-gradient(237deg, #CEA571 30.33%, #6F3E00 125.96%) !important;
-    width: 20px !important;
-    height: 20px !important;
+    width: 40px !important;
+    height: 15px !important;
     border-radius: 100px !important;
 }
-
 
 .swiper-pagination-bullet {
     background: linear-gradient(243deg, #CEA571 -251.82%, #6F3E00 130.85%) !important;
@@ -1344,7 +1396,7 @@ footer {
     text-align: center;
     flex-direction: column;
     gap: 20px;
-    max-width: 420px;
+    max-width: 700px;
     width: 100%;
 }
 
@@ -1433,7 +1485,7 @@ footer {
     width: 100%;
     background: linear-gradient(99deg, #B2803F -6.23%, rgba(178, 128, 63, 0.00) 101.47%);
     box-shadow: 0px 13px 18px 0px rgba(111, 62, 0, 0.74) inset;
-    padding: 25px 0px;
+    padding: 35px 0px 25px 0px;
 }
 
 .container_copy_int {
@@ -1642,7 +1694,9 @@ footer {
         height: 650px;
     }
 
-    .area_jx113_1 {
+    .area_jx113_1,
+    .area_jx113_2,
+    .area_jx113_3 {
         height: 650px;
     }
 
@@ -1812,7 +1866,9 @@ footer {
         height: 450px;
     }
 
-    .area_jx113_1 {
+    .area_jx113_1,
+    .area_jx113_2,
+    .area_jx113_3 {
         display: flex;
         justify-content: center;
         height: 450px;
@@ -1986,7 +2042,9 @@ footer {
         height: 400px;
     }
 
-    .area_jx113_1 {
+    .area_jx113_1,
+    .area_jx113_2,
+    .area_jx113_3 {
         height: 400px;
     }
 
@@ -2025,6 +2083,10 @@ footer {
     }
 
     .title_modelo h2 {
+        font-size: 22px;
+    }
+
+    .btn_contato_modelo h2 {
         font-size: 22px;
     }
 

@@ -7,7 +7,7 @@ if (!empty($_POST["nome"]) && !empty($_POST["endereco"])) {
     $endereco = addslashes($_POST["endereco"]);
     $produto = addslashes($_POST["produto"]);
 
-
+    //$email_to = "contato@similimusica.com.br";
     $email_to = "carlosxavier.dev@gmail.com";
 
     $assunto = "Formulário Simili Pianos";
