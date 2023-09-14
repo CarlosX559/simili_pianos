@@ -611,6 +611,51 @@ select option {
     width: 100%;
 }
 
+
+.area_ju109_1 {
+    position: relative;
+    background-image: url(../img/JU109_1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 745px;
+    width: 100%;
+}
+
+
+.area_ju109_2 {
+    position: relative;
+    background-image: url(../img/JU109_2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 745px;
+    width: 100%;
+}
+
+.area_ju109_3 {
+    position: relative;
+    background-image: url(../img/JU109_3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 745px;
+    width: 100%;
+}
+
+
+.area_jx113_1 {
+    position: relative;
+    background-image: url(../img/JX113_1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 745px;
+    width: 100%;
+}
+
+
+
 .bg_slide {
     position: absolute;
     left: 0px;
