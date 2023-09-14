@@ -339,6 +339,7 @@ nav ul li a:hover {
     top: 20px;
     right: 20px;
     font-size: 30px;
+    line-height: 100%;
     font-weight: 400;
     color: #CDA558;
     cursor: pointer;
