@@ -1126,6 +1126,7 @@ select option {
 .btn_contato:hover {
     transform: scale3d(1.1, 1.1, 1.1);
 }
+
 .btn_contato_1 {
     display: flex;
     justify-content: center;
@@ -1624,6 +1625,16 @@ footer {
         height: 650px;
     }
 
+    .area_ju109_1,
+    .area_ju109_2,
+    .area_ju109_3 {
+        height: 650px;
+    }
+
+    .area_jx113_1 {
+        height: 650px;
+    }
+
     .area_options_slide {
         justify-content: flex-end;
         height: 60%;
@@ -1777,6 +1788,20 @@ footer {
     .area_gb1k_1,
     .area_gb1k_2,
     .area_gb1k_3 {
+        display: flex;
+        justify-content: center;
+        height: 450px;
+    }
+
+    .area_ju109_1,
+    .area_ju109_2,
+    .area_ju109_3 {
+        display: flex;
+        justify-content: center;
+        height: 450px;
+    }
+
+    .area_jx113_1 {
         display: flex;
         justify-content: center;
         height: 450px;
@@ -1940,8 +1965,16 @@ footer {
     .area_gb1k_1,
     .area_gb1k_2,
     .area_gb1k_3 {
-        display: flex;
-        justify-content: center;
+        height: 400px;
+    }
+
+    .area_ju109_1,
+    .area_ju109_2,
+    .area_ju109_3 {
+        height: 400px;
+    }
+
+    .area_jx113_1 {
         height: 400px;
     }
 
