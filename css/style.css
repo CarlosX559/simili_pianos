@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 [data-animation] {
@@ -501,8 +501,13 @@ select option {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     position: relative;
+}
+
+.area_points {
+    display: flex;
+    gap: 20px;
 }
 
 .info_ambiente h1 {
@@ -787,7 +792,7 @@ select option {
 }
 
 .title_banner h2 {
-    color: #CDA558;
+    color: #FFFFFF;
     font-family: 'Montserrat';
     font-size: 72px;
     font-weight: 700;
@@ -799,7 +804,7 @@ select option {
 }
 
 .sub_title_banner p {
-    color: #FFF;
+    color: #CDA558;
     text-align: center;
     font-family: 'Montserrat';
     font-size: 42px;
@@ -808,7 +813,6 @@ select option {
     margin: 0px;
     filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .4));
 }
-
 
 /*Modelos*/
 
@@ -1018,8 +1022,8 @@ select option {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(99deg, #B2803F -6.23%, rgba(178, 128, 63, 0.00) 101.47%);
-    box-shadow: 0px 5px 10px 0px rgba(111, 62, 0, 0.6);
+    /*background: linear-gradient(99deg, #B2803F -6.23%, rgba(178, 128, 63, 0.00) 101.47%);
+    box-shadow: 0px 5px 10px 0px rgba(111, 62, 0, 0.6);*/
     width: 100%;
     max-width: max-content;
     border-radius: 20px;
@@ -1030,7 +1034,7 @@ select option {
 }
 
 .btn_contato_modelo h2 {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 24px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -1042,7 +1046,6 @@ select option {
 
 .btn_contato_modelo:hover {
     transform: scale3d(1.1, 1.1, 1.1);
-    box-shadow: 0px 5px 8px 2px rgba(111, 62, 0, 0.8);
 }
 
 #container_banner_2 {
@@ -2120,8 +2123,11 @@ footer {
     .area_infos_ambiente_int {
         gap: 10px;
         justify-content: center;
+        padding: 0px 20px;
     }
-
+    .area_points {
+        gap: 10px;
+    }
 
     /*Container footer*/
 

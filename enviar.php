@@ -10,6 +10,7 @@ if (!empty($_POST["nome"]) && !empty($_POST["endereco"])) {
     //$email_to = "contato@similimusica.com.br";
     $email_to = "carlosxavier.dev@gmail.com";
 
+
     $assunto = "Formulário Simili Pianos";
     
     $header = 'MIME-Version: 1.1'."\r\n".
@@ -21,10 +22,10 @@ if (!empty($_POST["nome"]) && !empty($_POST["endereco"])) {
     
 
     // Dados que serao enviados.
-    $body = "Nome: ".$nome." ".
-        "E-mail: ".$email." ".
-        "Telefone: ".$telefone." ".
-        "Endereço: ".$endereco." ".
+    $body = "Nome: ".$nome." "."<br>"."\r\n".
+        "E-mail: ".$email." "."<br>"."\r\n".
+        "Telefone: ".$telefone." "."<br>"."\r\n".
+        "Endereço: ".$endereco." "."<br>"."\r\n".
         "Produto: ".$produto;
 
 
@@ -33,11 +34,12 @@ if (!empty($_POST["nome"]) && !empty($_POST["endereco"])) {
 
 
     if ($status) {
-        header("Location: https://api.whatsapp.com/send?phone=5547999943130&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20pianos%20exclusivos!");
-
+        
+        header("Location: https://api.whatsapp.com/send?phone=5547999943130&text=Olá!%20Me%20chamo%20$nome,%20tenho%20interesse%20em%20seu%20Piano%20Yamaha%20exclusivo%20modelo%20$produto%20e%20gostaria%20de%20mais%20informações.");
+           
         $email_obrigado = $email;
         $assunto_obrigado = 'Teste obrigado';
-        $body_obrigado = 'Mensagem de obrigado';
+        $body_obrigado = 'Olá! É um prazer poder estar lhe atendendo, agradecemos por entrar em contato conosco e expressar seu interesse em nossos pianos.<br> Nossa equipe entrará em contato em breve para discutir suas necessidades e responder às suas perguntas.<br><br> Obrigado por escolher a Simili Pianos!<br> Enquanto isso, confira nossas redes e conheça mais sobre nós: 📱 Instagram: https://www.instagram.com/simili.pianos/';
         
         mail($email_obrigado, $assunto_obrigado, $body_obrigado, $header);
 
