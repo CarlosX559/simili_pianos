@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simili Pianos</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="No coração da arquitetura de luxo, emerge um símbolo atemporal de elegância: O piano acústico. Mais do que um instrumento, ele transcende as notas, transformando-se em uma obra-prima que ressoa em harmonia com o ambiente." />
+    <meta name="keywords" content="GB1K, Ju109Pe, Jx113Pe, Ambientação, Glamour, Exclusividade, Pianos de Luxo, Prestígio, Requinte" />
     <meta name="author" content="Carlos Xavier" />
+    <meta property="og:site_name" content="Simili Pianos">
+    <meta property="og:description" content="No coração da arquitetura de luxo, emerge um símbolo atemporal de elegância: O piano acústico. Mais do que um instrumento, ele transcende as notas, transformando-se em uma obra-prima que ressoa em harmonia com o ambiente.">
+    <meta property="og:image" content="https://similipianos.com.br/img/simili_logo_dourado.png">
+    <meta property="og:image:type" content="image/png">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -20,14 +24,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Google tag (gtag.js) -->
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-3531XZRDY9"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3531XZRDY9"></script>
     <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-3531XZRDY9');
-    </script>-->
+    </script>
 </head>
 
 <body>
@@ -188,6 +192,7 @@
                             <option value="DGB1K">DGB1K</option>
                             <option value="JX113T">JX113T</option>
                             <option value="JU109">JU109</option>
+                            <option value="Outro">Outro</option>
                         </select>
                     </div>
 
@@ -461,10 +466,16 @@
                     </div>
 
                     <div class="area_video_slide slide_principal" aria-hidden="true">
-                        <video autoplay muted loop playsinline preload="none">
+                        <video class="yamaha_disklavier" autoplay muted loop playsinline preload="none">
                             <source src="video/yamaha_disklavier.mp4" type="video/mp4">
                         </video>
-
+                        <script>
+                           let video = document.querySelector('.yamaha_disklavier');
+                           video.pause();
+                            setTimeout( () => {
+                                video.play();
+                            }, 2000);
+                        </script>
                     </div>
 
 
@@ -480,7 +491,6 @@
 
 
         </div>
-    </div>
     </div>
 
     <section id="container_acustico">
@@ -642,12 +652,12 @@
                 <div class="area_banner">
                     <div class="title_banner" data-animation="left" data-delay-1>
                         <h2>
-                            GB1K
+                            Piano acústico de cauda Yamaha 
                         </h2>
                     </div>
                     <div class="sub_title_banner" data-animation="right" data-delay-1>
                         <p>
-                            Piano de Cauda
+                            GB1K
                         </p>
                     </div>
                 </div>
@@ -828,16 +838,14 @@
 
 
                         <div class="area_redes">
-                            <a href="index.html">
+                            <a href="https://www.similimusica.com.br" target="_blank">
                                 <img src="img/word.svg" alt="" width="35" height="35">
                             </a>
                             <a href="https://www.instagram.com/simili.pianos/" target="_blank">
                                 <img src="img/instagram.svg" alt="" width="35" height="35">
                             </a>
 
-
                             <img class="btn_form" src="img/whatsapp.svg" alt="" width="35" height="35">
-
 
                         </div>
                     </div>
